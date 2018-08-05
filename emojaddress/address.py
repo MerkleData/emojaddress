@@ -15,7 +15,12 @@ class Address(object):
 
     SUPPORTED_COINS = ['btc', 'eth']
 
-    def __init__(self, val, coin=None):
+    def __init__(self):
+        self.MNEMONIC_EMOJI = list(EMOJI_UNICODE.values())[0:self.DICTIONARY_SIZE]
+        self.MNEMONIC_ENGLISH = self.WORDS_ENGLISH[0:self.DICTIONARY_SIZE]
+        self.MNEMONIC_CHINESE = self.WORDS_CHINESE[0:self.DICTIONARY_SIZE]
+
+    def mnemonic(self, val, coin=None, emoji=True, language=None):
         if coin is not None and coin.lower() not in self.SUPPORTED_COINS:
             coin = coin.lower()
             raise NotImplementedError("Only supports {}".format(self.SUPPORTED_COINS))
@@ -25,11 +30,6 @@ class Address(object):
         else:
             self._nr = self._b58decode(val)
 
-        self.MNEMONIC_EMOJI = list(EMOJI_UNICODE.values())[0:self.DICTIONARY_SIZE]
-        self.MNEMONIC_ENGLISH = self.WORDS_ENGLISH[0:self.DICTIONARY_SIZE]
-        self.MNEMONIC_CHINESE = self.WORDS_CHINESE[0:self.DICTIONARY_SIZE]
-
-    def mnemonic(self, emoji=True, language=None):
         words = []
         if emoji:
             mnemonics = self.MNEMONIC_EMOJI

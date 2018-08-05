@@ -12,26 +12,25 @@ class TestAddressTestCase(unittest.TestCase):
         self.btc_address   = "1thMirt546nngXqyPEz532S8fLwbozud8"
 
     def test_eth_to_words(self):
-        print("addr {} mnemonic {}".format(self.eth_address, Address(self.eth_address).mnemonic(emoji=False)))
+        self.assertEqual(Address().mnemonic(self.eth_address, emoji=False), "liar topple castle feature secret borrow general basic throw clinic soul orbit pilot noise actual")
 
     def test_btc_to_words(self):
-        print("addr {} mnemonic {}".format(self.btc_address, Address(self.btc_address, coin='btc').mnemonic(emoji=False)))
+        self.assertEqual(Address().mnemonic(self.btc_address, coin='btc', emoji=False), "fragile choice safe filter nose ginger toast hero laugh seven hockey bag soda immune able")
         
     def test_eth_to_chinese(self):
-        print("addr {} mnemonic {}".format(self.eth_address, Address(self.eth_address).mnemonic(emoji=False, language='Chinese')))
+        self.assertEqual(Address().mnemonic(self.eth_address, emoji=False, language='Chinese'), "欧棚增环偶件毫质阅才芯舞绕凝们")
 
     def test_btc_to_chinese(self):
-        print("addr {} mnemonic {}".format(self.btc_address, Address(self.btc_address, coin='btc').mnemonic(emoji=False, language='Chinese')))
+        self.assertEqual(Address().mnemonic(self.btc_address, coin='btc', emoji=False, language='Chinese'), "停车荒载麻挥茎穿险暂脸心浸架是")
 
     def test_eth_to_emoji(self):
-        print("addr {} mnemonic {}".format(self.eth_address, Address(self.eth_address).mnemonic()))
+        self.assertEqual(Address().mnemonic(self.eth_address), "🥝🎍🇰🇳💨🛢🇳🇦🏭🈲🛀🧑🏼🤸🏼🧘🏻‍♂️👨🏼‍✈️🙍🏻‍♂️🇦🇿")
 
     def test_eth_0_to_emoji(self):
-        print("addr {} mnemonic {}".format(self.eth_address_0, Address(self.eth_address_0).mnemonic()))
+        self.assertEqual(Address().mnemonic(self.eth_address_0), "🥈")
 
     def test_btc_to_emoji(self):
-        mn = Address(self.btc_address, coin='btc').mnemonic()
-        print("addr {} mnemonic {}".format(self.btc_address, Address(self.btc_address, coin='btc').mnemonic()))
+        mn = Address().mnemonic(self.btc_address, coin='btc')
         self.assertEqual(mn, "🧝🇺🇦💅🏼🎯🙅‍♂️👨‍👦‍👦🚶🏻🖋⌨🧓🏾🐥🏯⛹🏼😄🥉")
         
 
