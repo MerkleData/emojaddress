@@ -27,7 +27,7 @@ from emojaddress.address import Address
 address = Address()
 # see examples in these test cases
 ```
-[examples](https://github.com/MerkleData/emojaddress/blob/master/tests/test_emojaddress.py)
+[See example usages here](https://github.com/MerkleData/emojaddress/blob/master/tests/test_emojaddress.py)
 
 
 Credits
