@@ -28,6 +28,9 @@ emoji mnemonic for Ethereum and Bitcoin addresses
 Features
 --------
 
+[BIP dictionary based on bitcoin project](https://github.com/bitcoin/bips/tree/master/bip-0039)
+Emoji unicodes are copied from the [Emoji Python project](https://github.com/carpedm20/emoji)
+
 * TODO
 
 Credits
