@@ -8,7 +8,7 @@ Bitcoin and Ethereum address are hard to short-memorize when you navigate websit
 - Transalate address into mnemonic
 - Supported mnemonic for English, Chinese and Emoji only for now
 
-Deterministic wallets use mnemonic for private key. The same idea can be applied to public address. It's a matter of encoding eventually.
+Deterministic wallets use mnemonic for private key. The same idea can be applied to public address. It's a matter of encoding eventually. The BTC and Ethereum public addresses are based on a 20 bytes (160 bit) integer. Each dictionary's size is 2048. The address is encoded in 15 mnemonic to cover the entropy.
 
 
 install
