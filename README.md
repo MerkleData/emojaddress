@@ -39,10 +39,11 @@ Credits
 - Emoji unicodes are copied from the [Emoji Python project](https://github.com/carpedm20/emoji)
 
 
-* Free software: MIT license
-
 Credits2
 =======
 
 This package was created with [Cookiecutter](https://github.com/MerkleData/emojaddress/blob/master/tests/test_emojaddress.py) and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template.
+
+
+Free software: MIT license
 
