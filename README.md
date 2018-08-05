@@ -18,8 +18,7 @@ install
 pip install emojaddress
 ```
 
-*Only* supports Python3
-
+*Only* supports Python3. A separate JavaScript version is in the work.
 
 Example
 =======
