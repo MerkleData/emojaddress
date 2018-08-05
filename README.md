@@ -14,7 +14,9 @@ Deterministic wallets use mnemonic for private key. The same idea can be applied
 install
 =======
 
-
+```bash
+pip install emojaddress
+```
 
 *Only* supports Python3
 

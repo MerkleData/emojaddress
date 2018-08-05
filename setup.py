@@ -25,10 +25,10 @@ test_requirements = [
 
 setup(
     name='emojaddress',
-    version='0.1.0',
+    version='0.1.1',
     description="emoji mnemonic for Ethereum and Bitcoin addresses",
     long_description=readme + '\n\n' + history,
-    author="lonex",
+    author="stonelonely",
     author_email='lonex@gmail.com',
     url='https://github.com/lonex/emojaddress',
     packages=find_packages(include=['emojaddress']),
