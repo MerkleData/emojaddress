@@ -29,7 +29,7 @@ address = Address()
 # see examples in these test cases
 ```
 [See example usages here](https://github.com/MerkleData/emojaddress/blob/master/tests/test_emojaddress.py)
-
+[The difference in an Etherscan page](https://github.com/MerkleData/emojaddress/blob/master/sample_ethscanio.html.md)
 
 Credits
 =======
