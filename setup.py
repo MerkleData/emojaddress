@@ -5,7 +5,7 @@
 
 from setuptools import setup, find_packages
 
-with open('README.md') as readme_file:
+with open('README.rst') as readme_file:
     readme = readme_file.read()
 
 with open('HISTORY.rst') as history_file:
@@ -25,7 +25,7 @@ test_requirements = [
 
 setup(
     name='emojaddress',
-    version='0.1.2',
+    version='0.1.4',
     description="emoji mnemonic for Ethereum and Bitcoin addresses",
     long_description=readme + '\n\n' + history,
     author="stonelonely",
