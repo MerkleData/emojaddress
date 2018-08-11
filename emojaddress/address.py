@@ -16,7 +16,7 @@ class Address(object):
     SUPPORTED_COINS = ['btc', 'eth']
 
     def __init__(self):
-        self.MNEMONIC_EMOJI = list(EMOJI_UNICODE.values())[0:self.DICTIONARY_SIZE]
+        self.MNEMONIC_EMOJI = EMOJI_UNICODE[0:self.DICTIONARY_SIZE]
         self.MNEMONIC_ENGLISH = self.WORDS_ENGLISH[0:self.DICTIONARY_SIZE]
         self.MNEMONIC_CHINESE = self.WORDS_CHINESE[0:self.DICTIONARY_SIZE]
 
