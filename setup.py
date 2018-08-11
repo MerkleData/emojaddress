@@ -25,7 +25,7 @@ test_requirements = [
 
 setup(
     name='emojaddress',
-    version='0.1.4',
+    version='0.1.5',
     description="emoji mnemonic for Ethereum and Bitcoin addresses",
     long_description=readme + '\n\n' + history,
     author="stonelonely",
