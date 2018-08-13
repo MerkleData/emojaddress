@@ -30,7 +30,6 @@ class Address(object):
         else:
             self._nr = self._b58decode(val)
 
-        words = []
         if emoji:
             mnemonics = self.MNEMONIC_EMOJI
             join_sep = ''

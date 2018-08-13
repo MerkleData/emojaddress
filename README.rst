@@ -14,6 +14,9 @@ Bitcoin and Ethereum address are hard to short-memorize when you navigate websit
 
 Deterministic wallets use mnemonic for private key. The same idea can be applied to public address. It's a matter of encoding eventually. The BTC and Ethereum public addresses are based on a 20 bytes (160 bit) integer. Each dictionary's size is 2048. The address is encoded in 15 mnemonic to cover the entropy.
 
+The JavaScript version is at `JS emojaddress`_
+
+.. _`JS emojaddress`: https://github.com/MerkleData/emojaddress-js
 
 Install
 -------
@@ -22,7 +25,7 @@ Install
 
     > pip install emojaddress
 
-*Only* supports Python3. A separate JavaScript version is in the work.
+*Only* supports Python3
 
 Example
 -------
@@ -40,9 +43,11 @@ Credits
 -------
 
 - BIP dictionary based on `bitcoin project`_ 
+- Unicode Emoji `Unicode Emoji`_
 - Emoji unicodes are copied from the `Emoji Python project`_
 
 .. _`bitcoin project`: https://github.com/bitcoin/bips/tree/master/bip-0039
+.. _`Unicode Emoji`: https://unicode.org/emoji/
 .. _`Emoji Python project`: https://github.com/carpedm20/emoji
 
 Credits2
